@@ -1,6 +1,8 @@
 # Django-game-website
 Thematic site dedicated to computer games
 
+![index banner](screenshots/main_page.png)
+
 **Описание:**
 
 Динамичный игровой портал, посвященный миру компьютерных игр. На этом сайте вы найдете последние новости, обзоры игр, гайды и полезные советы. Присоединяйтесь к нашему сообществу и обсуждайте любимые игры с другими геймерами!
@@ -20,14 +22,14 @@ Thematic site dedicated to computer games
 
 **Установка:**
 
-1. Клонируйте репозиторий: `git clone https://github.com/your-username/gamerhub.git`
-2. Создайте виртуальное окружение и установите зависимости: `pip install -r requirements.txt`
-3. Запустите миграции базы данных: `python manage.py migrate`
-4. Запустите сервер разработки: `python manage.py runserver`
+1. Клонировать репозиторий: `git clone https://github.com/Tixon-noxit/Django-game-website.git`
+2. Создать виртуальное окружение и установить зависимости: `pip install -r requirements.txt`
+3. Запустить миграции базы данных: `python manage.py migrate`
+4. Запустить сервер разработки: `python manage.py runserver`
 
 **Лицензия:**
 
-Этот проект распространяется под лицензией MIT.
+Этот проект распространяется под лицензией Apache License Version 2.0.
 
 **Контакты:**
 
