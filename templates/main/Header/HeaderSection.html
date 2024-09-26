@@ -1,0 +1,27 @@
+{% load static %}
+<!-- Header section -->
+<header class="header-section">
+    <div class="container">
+        <!-- logo -->
+        <a class="site-logo" href="{% url 'index' %}">
+            <img src="{% static 'img/logo.png' %}" alt="">
+        </a>
+        <div class="user-panel">
+            <a href="#">Login</a> / <a href="#">Register</a>
+        </div>
+        <!-- responsive -->
+        <div class="nav-switch">
+            <i class="fa fa-bars"></i>
+        </div>
+        <!-- site menu -->
+        <nav class="main-menu">
+            <ul>
+                {% for item in main_menu %}
+                    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+    </div>
+</header>
+<!-- Header section end -->

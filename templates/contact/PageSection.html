@@ -1,0 +1,43 @@
+<!-- Page section -->
+<section class="page-section spad contact-page">
+    <div class="container">
+        <div class="map" id="map-canvas"></div>
+        <div class="row">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="comment-title">Contact us</h4>
+                <p>{{ contacts.about_us }}</p>
+                <div class="row">
+                    <div class="col-md-9">
+                        <ul class="contact-info-list">
+                            <li>
+                                <div class="cf-left">Address</div>
+                                <div class="cf-right">{{ contacts.address }}</div>
+                            </li>
+                            <li>
+                                <div class="cf-left">Phone</div>
+                                <div class="cf-right">{{ contacts.phone }}</div>
+                            </li>
+                            <li>
+                                <div class="cf-left">E-mail</div>
+                                <div class="cf-right">{{ contacts.e_mail }}</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-behance"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            {# Contact form #}
+            {% include 'contact/contact_form.html' %}
+
+        </div>
+    </div>
+</section>
+<!-- Page section end -->

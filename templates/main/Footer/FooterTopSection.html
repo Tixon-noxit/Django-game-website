@@ -1,0 +1,52 @@
+{% load static %}
+<!-- Footer top section -->
+<section class="footer-top-section">
+    <div class="container">
+        <div class="footer-top-bg">
+            <img src="{% static 'img/footer-top-bg.png' %}" alt="">
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="footer-logo text-white">
+                    <img src="{% static 'img/footer-logo.png' %}" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-widget mb-5 mb-md-0">
+                    <h4 class="fw-title">Latest Posts</h4>
+                    <div class="latest-blog">
+
+                        {% for article in latest_posts %}
+                            <div class="lb-item">
+                                <div class="lb-thumb set-bg" data-setbg="{{ article.image.url }}"></div>
+                                <div class="lb-content">
+                                    <div class="lb-date">{{ article.created_at }}</div>
+                                    <p>{{ article.title }}</p>
+                                    <a href="#" class="lb-author">By Admin</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-widget">
+                    <h4 class="fw-title">Top Comments</h4>
+                    <div class="top-comment">
+                        {% for comment in top_comments %}
+                            <div class="tc-item">
+                                <div class="tc-thumb set-bg" data-setbg="{{ comment.avatar.url }}"></div>
+                                <div class="tc-content">
+                                    <p><a href="#">{{ comment.author }}</a> <span>on</span> {{ comment.content|truncatewords:6 }}</p>
+                                    <div class="tc-date">{{ comment.created_at }}</div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer top section end -->
