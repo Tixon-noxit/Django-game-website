@@ -1,0 +1,36 @@
+{% load static %}
+
+<!-- Page section -->
+<section class="page-section review-page spad">
+    <div class="container">
+        <div class="row">
+            {% for review in reviews %}
+                <div class="col-md-6 review-item-container"
+                     style="display: {% if forloop.counter > 6 %}none{% endif %};">
+                    <div class="review-item">
+                        <div class="review-cover set-bg" data-setbg="{{ review.image.url }}">
+                            <div class="score yellow">{{ review.rating|cut:"," }}</div>
+                        </div>
+                        <div class="review-text">
+                            <h4>{{ review.title }}</h4>
+                            <div class="rating" data-rating="{{ review.rating|cut:',' }}">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star is-fade"></i>
+                            </div>
+                            <p>{{ review.text }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="text-center pt-4">
+            <button class="site-btn btn-sm" id="loadMoreBtn">Load More</button>
+        </div>
+    </div>
+</section>
+<!-- Page section end -->
+
+<script src="{% static 'js/PageReviewSection.js' %}"></script>

@@ -1,0 +1,31 @@
+# Django-specific
+.DS_Store
+*.pyc
+*.pyo
+__pycache__/
+.pytest_cache/
+.tox/
+local_settings.py
+db.sqlite3
+media/
+#static/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Common
+*.swp
+*~
+.idea
+.vscode
+*.log
+npm-debug.log*
+yarn-debug.log*
+node_modules/
+coverage/

@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+    {# Hero Section #}
+    {% include 'index/HeroSection.html' %}
+
+    {% if news %}
+        {# Latest News Section #}
+        {% include 'index/LatestNewsSection.html' %}
+    {% endif %}
+
+    {# Feature Section #}
+    {% include 'index/FeatureSection.html' %}
+
+    {% if  recent_games %}
+        {# Recent Game Section #}
+        {% include 'index/RecentGameSection.html' %}
+    {% endif %}
+
+    {% if tournament_games %}
+        {# Tournaments Section #}
+        {% include 'index/TournamentsSection.html' %}
+    {% endif %}
+
+    {% if reviews %}
+        {# Review Section #}
+        {% include 'index/ReviewSection.html' %}
+    {% endif %}
+
+{% endblock %}

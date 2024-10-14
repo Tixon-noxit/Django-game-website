@@ -1,0 +1,13 @@
+<!-- Latest news section -->
+<div class="latest-news-section">
+    <div class="ln-title">Latest News</div>
+    <div class="news-ticker">
+        <div class="news-ticker-contant">
+            {% for n in news %}
+            <div class="nt-item"><span class="{{ n.genre }}">new</span>{{ n.body_news }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- Latest news section end -->
