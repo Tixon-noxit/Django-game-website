@@ -17,15 +17,17 @@ Thematic site dedicated to computer games
 
 **Технологии:**
 
-* **Backend:** Django, Python, PostgreSQL
+* **Backend:** Django, Python, MySQL
 * **Frontend:** Bootstrap, CSS, HTML
 
 **Установка:**
 
 1. Клонировать репозиторий: `git clone https://github.com/Tixon-noxit/Django-game-website.git`
 2. Создать виртуальное окружение и установить зависимости: `pip install -r requirements.txt`
-3. Запустить миграции базы данных: `python manage.py migrate`
-4. Запустить сервер разработки: `python manage.py runserver`
+3. Создать `.env` и прописать приватные переменные среды окружения для файла `settings.py`
+4. Инициализировать переменные окружения командой `source .env`
+5. Запустить миграции базы данных: `python manage.py migrate`
+6. Запустить сервер разработки: `python manage.py runserver`
 
 **Лицензия:**
 
